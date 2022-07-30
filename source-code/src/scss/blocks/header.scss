@@ -1,0 +1,168 @@
+.header {
+    padding-top: 48px;
+
+
+    @include breakpoint($tablet-bp){
+        padding-top: 21px;
+     }
+
+     @include breakpoint($mobile-br){
+        height: 100px;
+
+     }
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__block{
+    display: none;
+    @include breakpoint($mobile-br){
+        display: block;
+        width: 50px;
+     }
+}
+
+.header__logo{
+    @include breakpoint($tablet-bp) {
+        margin-left: 80px;
+    }
+
+    @include breakpoint($mobile-52){
+        margin-left: 60px;
+     }
+
+     @include breakpoint($mobile-br){
+        margin: 0 auto 0 auto;
+     }
+}
+
+.header__logo-svg{
+    @include breakpoint($mobile-br){
+        display: block;
+        width: 100%;
+        height: auto;
+        text-align: center;
+     }
+}
+
+.header__nav {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+
+    color: $blue_01;
+
+    @include breakpoint($tablet-bp) {
+        display: none;
+    }
+
+}
+
+// бургер
+
+.header__nav.active {
+
+    @include breakpoint($tablet-bp) {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    background-color: $white;
+    transform: translate(-50%, 0);
+    padding: 20px;
+
+
+    position: absolute;
+    top: 3%;
+    left: 30%;
+    z-index: 1000;
+    transform: translate(-50%, 0);
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+    border-radius: 15px;
+}
+}
+
+//fixed
+
+.fixed {
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+    padding: 10px 0;
+
+    background-color: $black;
+    position: fixed;
+    top: -20px;
+    z-index: 10000;
+
+}
+
+.header__nav-link {
+    margin-right: 32px;
+
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @include breakpoint($tablet-bp) {
+        margin-right: 12px;
+    }
+}
+
+
+
+.header__tel {
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    /* identical to box height, or 34px */
+
+
+    color: $black;
+
+    position: relative;
+
+    @include breakpoint($mobile-br){
+        width: 50px;
+     }
+}
+
+.header__tel-phone{
+
+    @include breakpoint($mobile-br){
+        position: absolute;
+        top: -9px;
+        right: 0;
+
+        font-size: 0;
+
+     }
+
+
+}
+
+.header__tel-call{
+    display: none;
+    @include breakpoint($mobile-br){
+        display: block;
+
+        position: absolute;
+        top: -9px;
+        right: 5px;
+
+     }
+}
+
+
+
+

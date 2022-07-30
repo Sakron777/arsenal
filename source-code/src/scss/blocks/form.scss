@@ -1,0 +1,158 @@
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    background: #FFFFFF;
+    box-sizing: border-box;
+
+    @include breakpoint($tablet-bp) {
+        order: 2;
+    }
+}
+
+.form__body {
+    position: relative;
+
+    padding: 56px;
+
+
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+
+    }
+
+    @include breakpoint($mobile-br) {
+        padding: 15px;
+    }
+}
+
+.form__body._sending::after {
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s;
+}
+
+.form__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 140%;
+    margin-bottom: 62px;
+
+    text-align: center;
+    color: $black_333;
+
+    @include breakpoint($mobile-br) {
+        font-size: 32px;
+        margin-top: 40px;
+    }
+}
+
+.form__text {
+    width: 100%;
+    max-width: 556px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 170%;
+    text-align: left;
+    margin: 0 auto 51px auto;
+
+
+    color: $black_333;
+
+    @include breakpoint($mobile-br) {
+        font-size: 14px;
+    }
+
+    &--popup_3 {
+        margin: 0 auto 31px auto;
+    }
+}
+
+.form__input {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    width: 100%;
+    max-width: 556px;
+    height: 56px;
+
+    box-sizing: border-box;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 170%;
+
+    color: $black_333;
+    outline: none;
+
+    border: 1px solid #D5D5D5;
+    background-color: $white;
+    border-radius: 16px;
+    padding: 13px 0 13px 24px;
+    margin: 10px auto 30px auto;
+
+
+    &::placeholder {
+        color: $black_333;
+
+    }
+
+    &--area {
+        height: 124px;
+        resize: none;
+    }
+
+    &--section {
+        margin-bottom: 16px;
+
+    }
+
+    @include breakpoint($mobile-32) {
+        font-size: 8px;
+    }
+
+}
+
+option {
+    box-sizing: border-box;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 170%;
+
+    color: $black_333;
+    outline: none;
+
+}
+
+select {
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 5px 30px 5px 10px;
+
+    background: url(../img/expert/5.svg) no-repeat right 16px center / 16px auto;
+
+}
+
+select::-ms-expand {
+    display: none;
+}

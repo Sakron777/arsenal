@@ -1,0 +1,207 @@
+.footer {
+
+    background: $blue_02;
+    min-height: 674px;
+    padding-top: 80px;
+}
+
+.footer__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 140%;
+    margin: 0 0 48px 0;
+    /* identical to box height, or 56px */
+
+    text-align: center;
+
+    /* white */
+
+    color: $white;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.footer__item {
+    width: 100%;
+    max-width: 290px;
+    height: 346px;
+
+    background: $blue_03;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    padding: 32px;
+    margin: 0 16px 32px 16px;
+
+    position: relative;
+
+    @include breakpoint($tablet-250) {
+
+
+        &--one{
+            order: 2;
+
+            @include breakpoint($mobile-br) {
+                max-width: 100%;
+            }
+
+        }
+
+        &--two{
+            order: 3;
+            @include breakpoint($mobile-br) {
+                max-width: 100%;
+            }
+        }
+
+        &--three{
+            order: 1;
+            max-width: 100%;
+
+            @include breakpoint($tablet-81) {
+                max-width: 290px;
+            }
+
+            @include breakpoint($mobile-36) {
+                padding: 8px;
+            }
+
+        }
+
+    }
+}
+
+.footer__blocks-title {
+    width: 300px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 150%;
+    /* or 33px */
+
+    text-align: center;
+
+    /* blue */
+
+    color: $blue_02;
+    margin-bottom: 32px;
+
+    @include breakpoint($tablet-250) {
+        width: 100%;
+    }
+    @include breakpoint($mobile-32) {
+        font-size: 16px;
+    }
+}
+
+.footer__price-img {
+    position: absolute;
+
+    right: 50%;
+    left: 50%;
+    bottom: -35px;
+
+    transform: translate(-50%);
+
+    @include breakpoint($mobile-br) {
+        width: 90%;
+        height: auto;
+        display: block;
+        bottom: -25px;
+
+    }
+}
+
+.footer__tubs-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+
+}
+
+.footer__tubs-btn {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    cursor: pointer;
+    margin-right: 15px;
+
+    position: relative;
+    z-index: 100;
+
+    &:last-child{
+        margin-right: 0px;
+    }
+}
+
+.footer__tubs-btn.active {
+    background-color: $blue_01;
+
+}
+
+.footer__connection-img {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 84px;
+    height: 84px;
+
+    @include breakpoint($mobile-br) {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+.footer__tubs-item {
+    display: none;
+}
+
+.footer__tubs-item.active {
+    display: block;
+    text-align: center;
+
+}
+
+
+.footer__tubs-name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 170%;
+    /* identical to box height, or 31px */
+
+    text-align: center;
+
+    /* black */
+
+    color: $black;
+}
+
+.footer__tubs-tel {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 170%;
+    /* identical to box height, or 31px */
+
+    text-align: center;
+
+    /* black */
+
+    color: $black;
+}

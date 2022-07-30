@@ -1,0 +1,279 @@
+.stick_1 {
+    position: absolute;
+    top: 115px;
+    left: 0;
+    z-index: -1;
+
+    animation: stick_01 4s alternate infinite;
+    transition: all .3s;
+
+    @include breakpoint($tablet-bp){
+        display: none;
+     }
+}
+
+@keyframes stick_01 {
+    0% {
+        transform: translate3d(-15px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(1px, 0, 0);
+
+    }
+}
+
+.stick_2 {
+    position: absolute;
+    top: 364px;
+    left: 0;
+    z-index: -1;
+
+    animation: stick_02 4s alternate infinite;
+    transition: all .3s;
+
+    @include breakpoint($tablet-bp){
+        display: none;
+     }
+}
+
+@keyframes stick_02 {
+    0% {
+        transform: translate3d(-15px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(1px, 0, 0);
+
+    }
+}
+
+.stick_3 {
+    position: absolute;
+    top: 502px;
+    left: 0;
+    z-index: -1;
+
+    animation: stick_03 4s alternate infinite;
+    transition: all .3s;
+
+    @include breakpoint($tablet-bp){
+        top: 592px;
+        left: -80px;
+     }
+
+     @include breakpoint($mobile-br){
+        top: 15%;
+        left: -45px;
+        width: 141px;
+     }
+}
+
+@keyframes stick_03 {
+    0% {
+        transform: translate3d(0, -5px, 0);
+    }
+
+    100% {
+        transform: translate3d(0, -55px, 0);
+
+    }
+}
+
+.stick_4 {
+    position: absolute;
+    top: 574px;
+    left: 387px;
+    z-index: -1;
+
+    animation: stick_05 4s alternate infinite;
+    transition: all .3s;
+    @include breakpoint($tablet-bp){
+        display: none;
+     }
+}
+
+@keyframes stick_04 {
+    0% {
+        transform: translate3d(0, -5px, 0);
+    }
+
+    100% {
+        transform: translate3d(0, -55px, 0);
+
+    }
+}
+
+.stick_5 {
+    position: absolute;
+    top: 459px;
+    left: 40%;
+    z-index: -1;
+
+    animation: stick_05 5s alternate infinite;
+    transition: all .3s;
+
+    @include breakpoint($tablet-bp){
+        top: 588px;
+
+     }
+
+     @include breakpoint($mobile-br){
+        top: 15%;
+        right: 55px;
+        width: 151px;
+     }
+}
+
+
+@keyframes stick_05 {
+    0% {
+        transform: translate3d(0, -5px, 0);
+    }
+
+    100% {
+        transform: translate3d(0, -55px, 0);
+
+    }
+}
+
+.stick_6 {
+    position: absolute;
+    top: 324px;
+    right: 0px;
+    z-index: -1;
+
+    animation: stick_06 5s alternate infinite;
+    transition: all .3s;
+
+    @include breakpoint($mobile-br){
+        top: 70px;
+        width: 131px;
+     }
+}
+
+@keyframes stick_06 {
+    0% {
+        transform: translate3d(0, -5px, 0);
+    }
+
+    100% {
+        transform: translate3d(0, -55px, 0);
+
+    }
+}
+
+.stick_7 {
+    position: absolute;
+    top: 547px;
+    right: 97px;
+    z-index: -1;
+
+    animation: stick_07 5s alternate infinite;
+    transition: all .3s;
+
+    @include breakpoint($tablet-bp){
+        right: -85px;
+     }
+
+     @include breakpoint($mobile-br){
+        top: 15%;
+        right: -55px;
+        width: 131px;
+     }
+}
+
+@keyframes stick_07 {
+    0% {
+        transform: translate3d(0, -5px, 0);
+    }
+
+    100% {
+        transform: translate3d(0, -55px, 0);
+
+    }
+}
+
+
+.stick_8 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+
+    animation: stick_08 5s alternate infinite;
+    transition: all .3s;
+
+    @include breakpoint($tablet-bp){
+        display: none;
+     }
+}
+
+@keyframes stick_08 {
+    0% {
+        transform: translate3d(0, -5px, 0);
+    }
+
+    100% {
+        transform: translate3d(0, -55px, 0);
+
+    }
+}
+
+.stick_10 {
+    position: absolute;
+    top: 0;
+    right: 204px;
+    z-index: -1;
+
+    animation: stick_10 5s alternate infinite;
+    transition: all .3s;
+
+    @include breakpoint($tablet-bp){
+        display: none;
+     }
+}
+
+@keyframes stick_10 {
+    0% {
+        transform: translate3d(0, -5px, 0);
+    }
+
+    100% {
+        transform: translate3d(0, -55px, 0);
+
+    }
+}
+
+.stick_11 {
+    position: absolute;
+    top: 0;
+    left: 570px;
+    z-index: -1;
+
+    animation: stick_11 5s alternate infinite;
+    transition: all .3s;
+
+    @include breakpoint($tablet-bp){
+        left: 50%;
+     }
+
+     @include breakpoint($mobile-br){
+        left: 11px;
+        width: 131px;
+
+
+     }
+}
+
+
+@keyframes stick_11 {
+    0% {
+        transform: translate3d(0, -5px, 0);
+    }
+
+    100% {
+        transform: translate3d(0, -55px, 0);
+
+    }
+}

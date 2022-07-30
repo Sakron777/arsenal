@@ -1,0 +1,56 @@
+@import "vars";
+@import "reset";
+@import "mixins";
+@import "fonts";
+
+
+html{
+    font-size: 14px;
+    width: 100%;
+}
+
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: 'Panton', 'Lato', sans-serif;
+    font-size: 14px;
+    background: #FCFCFC;
+    color: #fff;
+
+    line-height: 1.5;
+}
+
+body.lock{
+    overflow: hidden;
+}
+
+
+a{
+
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+
+    &:hover{
+        text-decoration: underline
+    }
+}
+
+
+//bloсks
+
+@import "blocks/page";
+@import "blocks/header";
+@import "blocks/container";
+@import "blocks/intro";
+@import "blocks/stick";
+@import "blocks/popup";
+@import "blocks/btn";
+@import "blocks/form";
+@import "blocks/burger";
+@import "blocks/slider";
+@import "blocks/footer";

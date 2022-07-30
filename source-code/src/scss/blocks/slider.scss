@@ -1,0 +1,204 @@
+.slider {
+    background-color: white;
+    margin-bottom: 80px;
+
+}
+
+.slider__product-title {
+    margin-top: 80px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 140%;
+
+    text-align: center;
+
+
+    color: $black;
+}
+
+.slider__product-inner {
+    margin-top: 59px;
+}
+
+
+.slider__carusel-block{
+   width: 261px;
+   margin: 0 auto;
+}
+
+
+
+.slider__carusel-item {
+    display: block;
+    margin-right: 32px;
+    cursor: pointer;
+}
+
+.slider__carusel-img {
+    margin-bottom: 24px;
+}
+
+.slider__carusel-title {
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+
+    color: $black_333;
+    margin-bottom: 8px;
+
+    transition: all .3s;
+
+    &:hover {
+        color: $blue_01;
+        text-decoration: none;
+    }
+}
+
+.slider__carusel-info {
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 8px;
+    color: $black_333;
+
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+.slider__carusel-availability {
+    background: 0;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: $black_333;
+    margin-bottom: 24px;
+
+    span {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+
+
+        color: $green;
+    }
+
+
+}
+
+.slider__carusel-price {
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    margin-bottom: 24px;
+
+
+    /* black 333 */
+
+    color: $black_333;
+
+    span {
+        text-decoration-line: line-through;
+
+        color: #999999;
+    }
+}
+
+.slider__catalog-link {
+    display: block;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    margin: 0 auto;
+    /* or 25px */
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: $blue_01;
+    margin-top: 48px;
+
+    &::after{
+        display: block;
+        content: '';
+        width: 189px;
+        height: 1px;
+        background-color: $blue_01 ;
+        border-bottom: 1px solid $blue_01;
+
+        position: absolute;
+
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%);
+    }
+
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+
+/*РАБОТА СО СЛАЙДЕРОМ*/
+.slick-arrow {
+    display: block;
+    width: 48px;
+    height: 48px;
+    font-size: 0;
+    /*чтобы стрелки были по центу*/
+    color: transparent;
+
+    border: 0;
+    background: $white;
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    cursor: pointer;
+
+    position: absolute;
+    /*делаем стрелки для слайда*/
+    top: 20%;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.slick-arrow:after {
+    content: "";
+
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-top: 1px solid $black_333;
+    border-left: 1px solid $black_333;
+
+    position: absolute;
+
+    top: 55%;
+    right: 13%;
+    transform: translate(-50%, -50%);
+
+}
+
+.slick-prev {
+    left: 0;
+    transform: rotate(-45deg);
+}
+
+.slick-next {
+    right: 0;
+    transform: rotate(135deg);
+}
